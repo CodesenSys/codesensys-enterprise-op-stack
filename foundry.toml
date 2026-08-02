@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.24"
+optimizer = true
+optimizer_runs = 20_000
+gas_reports = ["SupplyChainProvenance", "HealthRecordAccessControl"]
+
+[fuzz]
+runs = 1_000
+
+[invariant]
+runs = 256
+depth = 64
+fail_on_revert = false

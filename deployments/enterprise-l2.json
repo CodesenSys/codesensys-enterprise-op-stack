@@ -1,0 +1,21 @@
+{
+  "network": "",
+  "chainId": null,
+  "rpcUrl": "",
+  "explorerUrl": "",
+  "l1SettlementNetwork": "sepolia",
+  "contracts": {
+    "SupplyChainProvenance": {
+      "address": "",
+      "deploymentTransaction": "",
+      "blockNumber": null,
+      "sourceCommit": ""
+    },
+    "HealthRecordAccessControl": {
+      "address": "",
+      "deploymentTransaction": "",
+      "blockNumber": null,
+      "sourceCommit": ""
+    }
+  }
+}
