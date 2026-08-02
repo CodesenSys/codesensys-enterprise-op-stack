@@ -6,3 +6,5 @@ lib/
 .deployer/
 *.log
 SPRINT_INSTRUCTIONS.md
+coverage-report.txt
+test-results.txt
