@@ -1,21 +1,42 @@
 {
-  "network": "",
-  "chainId": null,
-  "rpcUrl": "",
-  "explorerUrl": "",
-  "l1SettlementNetwork": "sepolia",
+  "network": {
+    "name": "CodesenSys OP Stack L2",
+    "chainId": 3399647,
+    "rpc": "http://127.0.0.1:8545",
+    "settlementLayer": "Ethereum Sepolia"
+  },
+  "deployer": "0xA8fc0E1E3Ad1E47B707a549C94Ec5989e75F3Cb5",
   "contracts": {
-    "SupplyChainProvenance": {
-      "address": "",
-      "deploymentTransaction": "",
-      "blockNumber": null,
-      "sourceCommit": ""
-    },
     "HealthRecordAccessControl": {
-      "address": "",
-      "deploymentTransaction": "",
-      "blockNumber": null,
-      "sourceCommit": ""
+      "address": "0x4E949Ac98442Ec2F127e61b74C24837227Aac0f0",
+      "deploymentTransaction": "0x6ddd0876b0a1673796a266720d5ba63c503652e2a2eb0a2954622f4cb3fc216e",
+      "deploymentBlock": 43326,
+      "gasUsed": 961510
+    },
+    "SupplyChainProvenance": {
+      "address": "0x75AcB6eA506f5bDA66e2242dbd0139c78768193f",
+      "deploymentTransaction": "0xdd0036fe4080daaa9fdcf0e507d3797d4eb294733cdc9c292b73bd5f54c0b691",
+      "deploymentBlock": 43458,
+      "gasUsed": 1373906
     }
-  }
+  },
+  "demoWorkflows": {
+    "healthcare": {
+      "recordId": "0xf9db27273db0f0c8bd3c90f66944921e3454860d19136a9afd8127c2cb11952d",
+      "providerRoleTransaction": "0xee431c963bf583a68599dd217b476b658958dcdba7cfddc50c8ebb6824157f12",
+      "registerRecordTransaction": "0x112ba100dea2f2415e7b655594f12e5406924b6ea54f1495794145426c02847c",
+      "grantAccessTransaction": "0x992bd503e2dbe6d6818c036494b26fc4ebfef35488825c1f801555643f6955b0",
+      "emergencyAccessTransaction": "0x1294e61fa746db545c9bf4f7572701855a4e0392850df1120d0bb67b7303fc5b",
+      "revokeAccessTransaction": "0x2ec60fab25dfd761687f5fefee65e7c4d19481738e72b18ab470cb24b5937e01"
+    },
+    "supplyChain": {
+      "assetId": "0x5e780a6cf17af07cbdf5592c1fb66e175bd33e4f58678730fcbcaa00d1c49009",
+      "registerAssetTransaction": "0x8f47571fee19615fd27ed599c320842ff4adf05f403a1603b8a1dd1450330541",
+      "inTransitTransaction": "0xfdbac83c875c679445d4a04fe713acafc6e5be66cb2b36448e289a74eb6cb958",
+      "customsClearedTransaction": "0x98f325e17ec15ed2813ee91e30a9ec2c53a150a3c3a0680422b52cb4dfc0d767",
+      "receivedTransaction": "0x50d71659257c8482fd89015810a366960c7cce6aa138c06898359808bc1bf035",
+      "recalledTransaction": "0x4a965958db28e18578c9b16df329ea030cc33bd5b7d55d97ac98b11e899cb398"
+    }
+  },
+  "remainingL2Balance": "0.049999471021784100"
 }
